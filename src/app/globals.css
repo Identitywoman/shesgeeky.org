@@ -1,0 +1,76 @@
+/* Colors and fonts carried over from the WordPress site (Elementor global kit).
+   This is the starting point for the redesign. */
+:root {
+  --ink: #0f131a;
+  --paper: #f8f6f2;
+  --accent: #a92d2d;
+  --muted: #5c6470;
+  --rule: #b2b2b1;
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.6;
+}
+
+a { color: var(--accent); }
+img { max-width: 100%; height: auto; }
+
+h1, h2, h3 { font-family: var(--serif); line-height: 1.2; }
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px 24px;
+  background: var(--ink);
+}
+.site-header .logo img { height: 48px; width: auto; display: block; }
+.site-header nav { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+.site-header nav a { color: var(--paper); text-decoration: none; font-weight: 500; }
+
+.button,
+.page-body .elementor-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: var(--accent);
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 64px; }
+
+/* Carried-over Elementor markup: stack sections simply until the redesign. */
+.page-body .e-con,
+.page-body .elementor-element { margin-bottom: 12px; }
+.page-body .elementor-icon svg { width: 28px; height: 28px; fill: var(--accent); }
+
+.placeholder {
+  padding: 24px;
+  border: 2px dashed var(--rule);
+  color: var(--muted);
+  text-align: center;
+}
+
+.site-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  padding: 40px 24px;
+  background: var(--ink);
+  color: var(--paper);
+}
+.site-footer a { display: block; color: var(--paper); text-decoration: none; margin-bottom: 6px; }
+.site-footer h4 { margin: 0 0 10px; font-family: var(--serif); }
+.site-footer .copyright { grid-column: 1 / -1; color: var(--rule); font-size: 14px; margin: 0; }

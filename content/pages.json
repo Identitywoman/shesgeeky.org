@@ -1,0 +1,34 @@
+{
+  "mailing-list": {
+    "title": "Mailing List",
+    "script": "https://eomail1.com/form/5c3cb87c-1ca0-11f1-81e7-2fc416113e8f.js"
+  },
+  "terms-of-services": {
+    "title": "Terms of Services",
+    "script": null
+  },
+  "privacy-policy": {
+    "title": "Privacy Policy",
+    "script": null
+  },
+  "sponsors": {
+    "title": "Sponsors",
+    "script": null
+  },
+  "conveners": {
+    "title": "Conveners",
+    "script": null
+  },
+  "our-story": {
+    "title": "Our Story",
+    "script": null
+  },
+  "attend": {
+    "title": "Attend",
+    "script": null
+  },
+  "index": {
+    "title": "Homepage",
+    "script": null
+  }
+}
