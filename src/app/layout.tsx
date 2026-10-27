@@ -18,27 +18,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
         />
       </head>
       <body>
         <header className="site-header">
-          <Link href="/" className="logo">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`${base}/wp-content/uploads/2026/03/sg_logo_bwsquare.png`} alt="She's Geeky" />
-          </Link>
-          <nav>
-            {nav.map((item) => (
-              <Link key={item.href} href={item.href}>{item.label}</Link>
-            ))}
-            <Link href="/mailing-list/" className="button">Mailing List</Link>
-          </nav>
+          <div className="wrap header-row">
+            <Link href="/" className="wordmark">She&rsquo;s Geeky</Link>
+            <nav>
+              {nav.slice(1).map((item) => (
+                <Link key={item.href} href={item.href}>{item.label}</Link>
+              ))}
+              <Link href="/mailing-list/" className="btn btn-small">Mailing List</Link>
+            </nav>
+          </div>
         </header>
 
         <main>{children}</main>
 
         <footer className="site-footer">
+          <div className="wrap footer-grid">
           <div>
+            <p className="wordmark">She&rsquo;s Geeky</p>
             <p>
               We are a fiscally sponsored project of Planetwork NGO, a 501(c)(3), and your donations are tax deductible.
             </p>
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/terms-of-services/">Terms of Services</Link>
           </div>
           <p className="copyright">Copyright © {new Date().getFullYear()} Shesgeeky.org. All rights reserved.</p>
+          </div>
         </footer>
       </body>
     </html>
