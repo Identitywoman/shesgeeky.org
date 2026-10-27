@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { base } from '@/lib/pages'
-import { nav, registerUrl } from '@/lib/nav'
+import { img, nav, registerUrl, contactEmail } from '@/lib/site'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: "She's Geeky",
   description: 'Since 2007, She’s Geeky has been creating space for women in technology to connect, collaborate, and lead.',
-  icons: { icon: `${base}/wp-content/uploads/2026/03/sg_logo_bwsquare.png` },
+  icons: { icon: img('2026/03/sg_logo_bwsquare.png') },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -43,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <p>
               We are a fiscally sponsored project of Planetwork NGO, a 501(c)(3), and your donations are tax deductible.
             </p>
-            <p><a href="mailto:kaliya@shesgeeky.org">kaliya@shesgeeky.org</a></p>
+            <p><a href={`mailto:${contactEmail}`}>{contactEmail}</a></p>
           </div>
           <div>
             <h4>Navigate</h4>

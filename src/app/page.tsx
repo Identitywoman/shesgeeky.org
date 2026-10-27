@@ -1,8 +1,5 @@
 import Link from 'next/link'
-import { base } from '@/lib/pages'
-import { registerUrl } from '@/lib/nav'
-
-const img = (p: string) => `${base}/wp-content/uploads/${p}`
+import { img, registerUrl } from '@/lib/site'
 
 const youAre = [
   'Working in AI',
