@@ -15,7 +15,7 @@ export default function Home() {
       <section className="hero">
         <div className="wrap hero-grid">
           <div>
-            <p className="eyebrow">A Human + Tech Week Partner Event</p>
+            <p className="eyebrow">Friday, May 14, 2027 &middot; A Human + Tech Week Partner Event</p>
             <h1>
               She&rsquo;s Geeky
               <em>AI Edition</em>

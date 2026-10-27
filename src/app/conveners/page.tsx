@@ -102,7 +102,7 @@ export default function Conveners() {
             <div>
               <span className="label">A Human + Tech Week Partner Event</span>
               <strong>She&rsquo;s Geeky, AI Edition</strong>
-              <span>May 15, 2026 | San Francisco</span>
+              <span>Friday, May 14, 2027 | San Francisco</span>
             </div>
             <div>
               <span className="label">An Open Space Unconference</span>

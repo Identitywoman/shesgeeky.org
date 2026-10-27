@@ -61,7 +61,7 @@ export default function Attend() {
           <div className="event-card">
             <div>
               <span className="label">When</span>
-              <strong>Friday, May 15</strong>
+              <strong>Friday, May 14, 2027</strong>
               <span>8:30 AM - 5:30 PM PDT</span>
             </div>
             <div>
