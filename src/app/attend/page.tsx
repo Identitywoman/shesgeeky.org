@@ -62,7 +62,7 @@ export default function Attend() {
             <div>
               <span className="label">When</span>
               <strong>Friday, May 14, 2027</strong>
-              <span>8:30 AM - 5:30 PM PDT</span>
+              <span>Time to be announced</span>
             </div>
             <div>
               <span className="label">Where</span>
@@ -128,9 +128,9 @@ export default function Attend() {
       <section className="closing">
         <div className="wrap">
           <h2>Claim Your Seat</h2>
-          <p>Registration is open. Join 200+ women shaping the future of AI. Early bird pricing available.</p>
+          <p>Registration opens soon. Join 200+ women shaping the future of AI. Get on the mailing list to hear first.</p>
           <div className="actions">
-            <a className="btn" href={registerUrl}>Register Now</a>
+            <a className="btn" href={registerUrl}>Join the Mailing List</a>
           </div>
         </div>
       </section>

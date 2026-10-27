@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { img, nav, registerUrl, contactEmail } from '@/lib/site'
+import { img, nav, contactEmail } from '@/lib/site'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -52,7 +52,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
           <div>
             <h4>Join</h4>
-            <a href={registerUrl}>Register</a>
             <Link href="/mailing-list/">Mailing List</Link>
             <a href="https://www.linkedin.com/groups/39189/">LinkedIn Group</a>
           </div>

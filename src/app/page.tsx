@@ -116,7 +116,7 @@ export default function Home() {
             intelligence. The future of AI needs your voice.
           </p>
           <div className="actions">
-            <a className="btn" href={registerUrl}>Register for AI Edition</a>
+            <a className="btn" href={registerUrl}>Join the Mailing List</a>
             <Link className="btn btn-ghost" href="/our-story/">Our Story</Link>
           </div>
         </div>

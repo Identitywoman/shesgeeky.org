@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import EmailOctopusForm from '@/components/EmailOctopusForm'
 import PageHero from '@/components/PageHero'
-import { img, registerUrl } from '@/lib/site'
+import { img } from '@/lib/site'
 
 export const metadata: Metadata = { title: "Mailing List | She's Geeky" }
 
@@ -36,7 +36,6 @@ export default function MailingList() {
               <li>Comedy sharpened here</li>
               <li>Movements found their voice here</li>
             </ul>
-            <a className="btn" href={registerUrl}>Join us</a>
           </div>
         </div>
       </section>

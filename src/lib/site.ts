@@ -6,7 +6,9 @@ export const base = process.env.NEXT_PUBLIC_BASE_PATH || ''
 // Images carried over from WordPress keep their old paths under public/wp-content/uploads.
 export const img = (p: string) => `${base}/wp-content/uploads/${p}`
 
-export const registerUrl = 'https://luma.com/vno5lfhr'
+// Registration buttons go to the mailing list until the 2027 Luma event exists.
+// Put the new Luma link here when it is ready (2026 was https://luma.com/vno5lfhr).
+export const registerUrl = `${base}/mailing-list/`
 export const contactEmail = 'kaliya@shesgeeky.org'
 export const mapsUrl =
   'https://www.google.com/maps/search/?api=1&query=Mabuhay%20Gardens&query_place_id=ChIJHTm6UwCBhYARbw2sXLbjFgw'
